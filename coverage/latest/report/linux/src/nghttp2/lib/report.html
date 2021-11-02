@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' type='text/css' href='../../../../style.css'>
+    <!-- Custom style overrides -->
+    <style>
+      /* Copyright 2018 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+th, td {
+  padding: 5px 16px;
+}
+
+tbody td, tfoot td {
+  font-size: 14px;
+}
+
+thead th {
+  font-size: 16px;
+}
+
+thead th, tfoot td {
+  background-color: #f5f5f5;
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  color: #484848;
+  text-transform: uppercase;
+}
+
+tbody tr:hover td, tfoot tr:hover td {
+  background-color: #f5f5f5;
+  border-color: #e4e4e4 !important;
+}
+    </style>
+  </head>
+  <body>
+    <h2>Coverage Report</h2>
+    <p>
+      View results by:
+            <a href='../../../directory_view_index.html'>Directories</a>
+              | <a href='../../../file_view_index.html'>Files</a>
+          </p>
+    <div class='centered'><table>
+  <thead>
+    <tr>
+      <th class="column-entry-bold">Path</th>
+      <th class="column-entry-bold" onclick="sortTable(SORT_COLUMN.LINE)" title=
+          "Line coverage is the percentage of code lines which have been executed at least once. Only executable lines within function bodies are considered to be code lines.">
+        Line Coverage
+      </th>
+      <th class="column-entry-bold" onclick="sortTable(SORT_COLUMN.FUNCTION)" title=
+          "Function coverage is the percentage of functions which have been executed at least once. A function is considered to be executed if any of its instantiations are executed.">
+        Function Coverage
+      </th>
+      <th class="column-entry-bold" onclick="sortTable(SORT_COLUMN.REGION)" title=
+          "Region coverage is the percentage of code regions which have been executed at least once. A code region may span multiple lines (e.g in a large function body with no control flow). However, it's also possible for a single line to contain multiple code regions (e.g in 'return x || y &amp;&amp; z').">
+        Region Coverage
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_buf.c.html'>nghttp2_buf.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 39.72% (141/355)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 53.33% (16/30)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 39.67% (73/184)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_callbacks.c.html'>nghttp2_callbacks.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 36.71% (29/79)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 36.00% (9/25)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 39.29% (11/28)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_frame.c.html'>nghttp2_frame.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 42.44% (306/721)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 57.97% (40/69)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 39.94% (135/338)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_hd.c.html'>nghttp2_hd.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 61.19% (1009/1649)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 61.73% (50/81)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 61.60% (653/1060)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_hd_huffman.c.html'>nghttp2_hd_huffman.c</a></pre>
+              </td>
+            <td class='column-entry-yellow'>
+        <pre> 84.09% (74/88)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (5/5)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 77.55% (38/49)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_helper.c.html'>nghttp2_helper.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 35.77% (88/246)</pre>
+      </td>
+            <td class='column-entry-yellow'>
+        <pre> 85.71% (12/14)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 37.76% (54/143)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_http.c.html'>nghttp2_http.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 47.56% (195/410)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 64.71% (11/17)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 52.86% (203/384)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_map.c.html'>nghttp2_map.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 65.12% (84/129)</pre>
+      </td>
+            <td class='column-entry-yellow'>
+        <pre> 91.67% (11/12)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 62.32% (43/69)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_mem.c.html'>nghttp2_mem.c</a></pre>
+              </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (32/32)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (10/10)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (10/10)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_outbound_item.c.html'>nghttp2_outbound_item.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 60.47% (52/86)</pre>
+      </td>
+            <td class='column-entry-yellow'>
+        <pre> 80.00% (4/5)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 60.61% (20/33)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_pq.c.html'>nghttp2_pq.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 51.13% (68/133)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 69.23% (9/13)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 44.00% (33/75)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_priority_spec.c.html'>nghttp2_priority_spec.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 66.67% (14/21)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 75.00% (3/4)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 50.00% (10/20)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_rcbuf.c.html'>nghttp2_rcbuf.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 77.55% (38/49)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 71.43% (5/7)</pre>
+      </td>
+            <td class='column-entry-yellow'>
+        <pre> 83.33% (20/24)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_session.c.html'>nghttp2_session.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 47.06% (2522/5359)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 57.37% (109/190)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 49.13% (1713/3487)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_stream.c.html'>nghttp2_stream.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 43.80% (240/548)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 52.00% (26/50)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 41.32% (131/317)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_submit.c.html'>nghttp2_submit.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 22.52% (125/555)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 39.13% (9/23)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 22.00% (66/300)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='nghttp2_version.c.html'>nghttp2_version.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/5)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/5)</pre>
+      </td>
+          </tr>
+      </tbody>
+      <tfoot>
+      <tr class="light-row-bold">
+        <td>
+          <pre>Totals</pre>
+        </td>
+                <td class='column-entry-red'>
+          <pre> 47.94% (5017/10465)</pre>
+        </td>
+                <td class='column-entry-red'>
+          <pre> 59.17% (329/556)</pre>
+        </td>
+                <td class='column-entry-red'>
+          <pre> 49.23% (3213/6526)</pre>
+        </td>
+              </tr>
+    </tfoot>
+  </table>
+
+<script>
+  const SORT_COLUMN = {
+    LINE: 2,
+    FUNCTION: 3,
+    REGION: 4,
+  }
+
+  const SORT_TYPES = {
+    UNSET: -1,
+    PERCENT: 0,
+    AGGREGATE: 1,
+  }
+
+  var SORT_ORDER = {
+    [SORT_COLUMN.LINE]: [SORT_TYPES.UNSET],
+    [SORT_COLUMN.FUNCTION]: [SORT_TYPES.UNSET],
+    [SORT_COLUMN.REGION]: [SORT_TYPES.UNSET],
+  }
+
+  function sortTable(columnNumber) {
+    SORT_ORDER[columnNumber] = ++SORT_ORDER[columnNumber] % 2;
+
+    let columnSortOrder = SORT_ORDER[columnNumber];
+    let tbody = document.getElementsByTagName("tbody")[0];
+
+    [].slice.call(tbody.rows).sort(function(a, b) {
+      let aColumn = a.cells[columnNumber-1].textContent;
+      let bColumn = b.cells[columnNumber-1].textContent;
+
+      let aColumnCompare, bColumnCompare;
+      if (columnSortOrder == SORT_TYPES.PERCENT) {
+        aColumnCompare = parseFloat(/([0-9.]+)%/.exec(aColumn)[1]);
+        bColumnCompare = parseFloat(/([0-9.]+)%/.exec(bColumn)[1]);
+      } else {
+        aColumnCompare = parseInt(/\/(\d+)/.exec(aColumn)[1]);
+        bColumnCompare = parseInt(/\/(\d+)/.exec(bColumn)[1]);
+      }
+
+      return (
+          aColumnCompare < bColumnCompare ? -1:
+              aColumnCompare > bColumnCompare ? 1 : 0);
+    }).forEach(function(value, index) {
+      tbody.appendChild(value);
+    });
+  }
+
+</script>    </div>
+  </body>
+</html>
